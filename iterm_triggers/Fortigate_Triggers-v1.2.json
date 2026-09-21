@@ -1,0 +1,1536 @@
+{
+  "Guid" : "cc7e442a-b035-4760-92d6-6b6aa1070141",
+  "Triggers" : [
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "regex" : "dropped_bytes=0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "dropped_bytes=0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "dropped_bytes=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "dropped_bytes="
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "regex" : "dropped_packets=0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "dropped_packets=0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "dropped_packets=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "dropped_packets="
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00000000f9f9,p3#000000000000}",
+      "regex" : "use-shortcut-sla",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "use-shortcut-sla"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ffff,p3#000000000000}",
+      "name" : "accept_traffic",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "accept_traffic"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "regex" : "use-shortcut",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "use-shortcut"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "dropped=0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "dropped=0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "status.operational: down",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "status.operational: down"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "status.operational: up",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "status.operational: up"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "priority 999",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "priority 999"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "priority 1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "priority\\s+1\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00fffd,p3#000000000000}",
+      "name" : "priority 2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "priority\\s+2\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "route tag 999",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "route tag 999"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "route tag 1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "route tag 1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00fffd,p3#000000000000}",
+      "name" : "route tag 2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "route tag 2"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "Community: 65000:999",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "Community: 65000:999"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "Community: 65000:1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "Community: 65000:1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00fffd,p3#000000000000}",
+      "name" : "Community: 65000:2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "Community: 65000:2"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : ": shortcut-offer",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : ": shortcut-offer"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "looking up shortcut by",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "looking up shortcut by"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "processing notify type SHORTCUT_OFFER",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "processing notify type SHORTCUT_OFFER"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "shortcut-query received",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "shortcut-query received"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "recv shortcut-query",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "recv shortcut-query"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "processing notify type SHORTCUT_QUERY",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "processing notify type SHORTCUT_QUERY"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "recv shortcut-reply",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "recv shortcut-reply"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "processing notify type SHORTCUT_REPLY",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "processing notify type SHORTCUT_REPLY"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "shortcut-reply received",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "shortcut-reply received"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff00,p3#000000000000}",
+      "name" : "send shortcut-query",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "send shortcut-query"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff00,p3#000000000000}",
+      "name" : "forward shortcut-query",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "forward shortcut-query"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff00,p3#000000000000}",
+      "name" : "send shortcut-offer",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "send shortcut-offer"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff00,p3#000000000000}",
+      "name" : "forward shortcut-reply",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "forward shortcut-reply"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff00,p3#000000000000}",
+      "name" : "send shortcut-reply",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "send shortcut-reply"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "adding new dynamic tunnel",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "adding new dynamic tunnel"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "shortcut health check selector added",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "shortcut health check selector added"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "shortcut selector added",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "shortcut selector added"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f11b975f085c,p3#000000000000}",
+      "regex" : "ignoring connect event",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "ignoring connect event"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#999999999999,p3#000000000000}",
+      "name" : "shortcut-query matches existing auto-discovery SA",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "shortcut-query matches existing auto-discovery SA"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "auto-discovery-receiver not enabled, ignoring",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "auto-discovery-receiver not enabled, ignoring"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "selectors\\(total,up\\):\\s*1\/0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "selectors(total,up): 1\/0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff3333,p3#000000000000}",
+      "name" : "selectors(total,up): 1\/1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "selectors\\(total,up\\):\\s*1\/1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff3333,p3#000000000000}",
+      "name" : "selectors(total,up): 2\/2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "selectors\\(total,up\\):\\s*2\/\\d"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "selectors\\(total,up\\):\\s*2\/0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "selectors(total,up): 2\/0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "name" : "PSK auth failed: probable pre-shared key mismatch",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "PSK auth failed: probable pre-shared key mismatch"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff33,p3#000000000000}",
+      "name" : "shortcut",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "shortcut"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "new entry",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "new entry"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "Unknown action",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "Unknown action"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff00,p3#000000000000}",
+      "name" : "sdwan_mbr_seq=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "sdwan_mbr_seq="
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "reverse path check fail",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "reverse path check fail"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff00,p3#000000000000}",
+      "name" : "sdwan_service_id=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "sdwan_service_id="
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "RETRANSMIT_AUTH",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "RETRANSMIT_AUTH"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "License Status: Valid",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "License Status: Valid"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "established IKE SA",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "established IKE SA"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "Evaluation License",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "Evaluation License"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "state=start present no_carrier",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "state=start present no_carrier"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "state=start present",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "state=start present"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "state=present no_carrier",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "state=present no_carrier"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "status=down",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "status=down"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "STATUS=up",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "STATUS=up"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "status=fail",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "status=fail"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "status=ok",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "status=ok"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#004279,p3#000000000000}",
+      "name" : "vwl_mbr_seq.\\ds+",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "vwl_mbr_seq.\\ds+"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "sla_map=0x0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla_map=0x0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#7e7effff0000,p3#000000000000}",
+      "regex" : "sla_map=0x1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla_map=0x1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "sla_map=0x2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla_map=0x2"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "sla_map=0x4",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla_map=0x4"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "sla_map=0x5",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla_map=0x5"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "sla_map=0x6",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla_map=0x6"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "sla_map=0x7",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "sla_map=0x7"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#7e7effff0000,p3#000000000000}",
+      "regex" : "sla\\(0x1\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla(0x1)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#7e7effff0000,p3#000000000000}",
+      "regex" : "sla: 0x1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla: 0x1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "sla\\(0x0\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla(0x0)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "sla: 0x0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "sla: 0x0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00fffd,p3#000000000000}",
+      "name" : "shaping_policy_id=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "shaping_policy_id="
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00fffd,p3#000000000000}",
+      "name" : "route_policy_id=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "route_policy_id="
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00fffd,p3#000000000000}",
+      "name" : "policy_id=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "policy_id="
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00fffd,p3#000000000000}",
+      "name" : "remote gw:",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "remote gw:"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff33,p3#000000000000}",
+      "name" : "transport_group:",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "transport_group:"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "Selected path:",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "Selected path:"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00fffd,p3#000000000000}",
+      "name" : "Service ID",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "Service ID"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "route-suppressed=0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "route-suppressed=0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "route-suppressed=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "route-suppressed="
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "(pass)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 1,
+      "regex" : "(pass)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000f9,p3#000000000000}",
+      "name" : "rmt_sla=in",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "rmt_sla=in"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "rmt_sla=out",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "rmt_sla=out"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#00ff33,p3#000000000000}",
+      "name" : "dst-negate",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "dst-negate"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#7e7effff0000,p3#000000000000}",
+      "regex" : "alive",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "alive"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0f096960808,p3#000000000000}",
+      "regex" : "allow_err",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "allow_err"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0010ff,p3#000000000000}",
+      "name" : "allow",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "allow"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0017ff,p3#000000000000}",
+      "name" : "allowed",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "allowed"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000aff,p3#000000000000}",
+      "name" : "permit",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "permit"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "act-accept",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "act-accept"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0006ff,p3#000000000000}",
+      "name" : "accept",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "accept"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0012ff,p3#000000000000}",
+      "name" : " up ",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : " up "
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "down",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "down"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "dead",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "dead"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "act-drop",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "act-drop"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "drop",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "drop"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "denied",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "denied"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "deny",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "deny"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "error",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "error"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "fail",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "fail"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "illegal",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "illegal"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "invalid",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "invalid"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "conserv",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "conserv"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#008000,p3#000000000000}",
+      "name" : "ad=s\/1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "ad=s\/1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#008000,p3#000000000000}",
+      "name" : "ad=\/0",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "ad=\/0"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#008000,p3#000000000000}",
+      "name" : "ad=r\/2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "ad=r\/2"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#008000,p3#000000000000}",
+      "name" : "ads",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "ads"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#008000,p3#000000000000}",
+      "name" : "adr",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "adr"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#008000,p3#000000000000}",
+      "name" : "adf",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "adf"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#840f2461ac75,p3#000000000000}",
+      "name" : "HUB1-VPN1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "HUB1-VPN1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f0af20f3d864,p3#000000000000}",
+      "name" : "HUB1-VPN2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "HUB1-VPN2"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff8d114c92,p3#000000000000}",
+      "name" : "HUB2-VPN1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "HUB2-VPN1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffffc6cca698,p3#000000000000}",
+      "name" : "HUB2-VPN2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "HUB2-VPN2"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#21607d4bfb21,p3#000000000000}",
+      "name" : "CLOUD-VPN1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "CLOUD-VPN1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#b207d2b9ffff,p3#000000000000}",
+      "name" : "CLOUD-VPN2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "CLOUD-VPN2"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff003f,p3#000000000000}",
+      "name" : "Branch-Lo",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "Branch-Lo"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "name" : "wan1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "wan1"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000028b9ffff,p3#000000000000}",
+      "name" : "wan2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "wan2"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#2334da78e563,p3#000000000000}",
+      "name" : "base=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "\\bbase=(?=10|8|5|4\\b)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#483dfaab5d18,p3#000000000000}",
+      "name" : "base10",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(?<=\\bbase=)10\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#2323d9d9e4e4,p3#000000000000}",
+      "name" : "redundant=",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "\\bredundant=(?=1|2|3\\b)"
+    },
+    {
+      "regex" : "",
+      "action" : "BounceTrigger"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#4747f9f95c5c,p3#000000000000}",
+      "name" : "redundant1",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(?<=\\bredundant=)1\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#e0e082822d2d,p3#000000000000}",
+      "name" : "redundant2",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(?<=\\bredundant=)2\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#fd5500000000,p3#000000000000}",
+      "name" : "redundant3",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(?<=\\bredundant=)3\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#fffffbf96c3b,p3#000000000000}",
+      "name" : "base8",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(?<=\\bbase=)8\\b"
+    },
+    {
+      "regex" : "",
+      "action" : "BounceTrigger"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#e0f182ce2d6e,p3#000000000000}",
+      "name" : "base5",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(?<=\\bbase=)5\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "name" : "base4",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(?<=\\bbase=)4\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "name" : "Version:",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(Version:\\s*)(.*)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffffffff,p3#000000000000}",
+      "name" : "priority-in-sla",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 1,
+      "regex" : "(priority-in-sla\\s+)([0-5]?[0-9]{1,2}|500)\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "name" : "priority-in-sla digits",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 1,
+      "regex" : "(priority-in-sla\\s+)([0-5]?[0-9]{1,2}|500)\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffffffff,p3#000000000000}",
+      "name" : "priority-in-sla",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(priority-in-sla\\s+)(100|[1-9]\\d?)\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff77070000,p3#000000000000}",
+      "name" : "priority-out-sla",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(priority-out-sla\\s+)(100|[1-9]\\d?)\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "name" : "set source",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(set\\s+source\\s+)(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffffe1560000,p3#000000000000}",
+      "name" : "ports",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "port[- ]?(100|[1-9]\\d?)\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#367880beffff,p3#000000000000}",
+      "name" : "x ports",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "\\bx[- ]?(100|[1-9]\\d?)\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#431cc858f2f1,p3#000000000000}",
+      "name" : "VLAN Vlan or vlan",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "(\\b[Vv][Ll][Aa][Nn][- ]?)([1-9]\\d{0,2}|[1-3]\\d{3}|4[0-8]\\d{2}|409[0-5])\\b"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "name" : "packet-loss",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "regex" : "packet-loss\\((?!0\\.000%)[0-9.]+%\\)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "regex" : "packet-loss\\(0\\.000%\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "packet-loss(0.000%)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "regex" : "latency\\(([0-4]?[0-9]|50)(\\.[0-9]+)?\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "latency(0-50)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffffe0e00000,p3#000000000000}",
+      "regex" : "latency\\((50\\.[0-9]*[1-9][0-9]*|[5-9][0-9](\\.[0-9]+)?|100(\\.0+)?)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "latency(50.000-100.000)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f711aef55028,p3#000000000000}",
+      "regex" : "latency\\((100\\.[0-9]*[1-9][0-9]*|1[0-1][0-9](\\.[0-9]+)?|1[2-4][0-9](\\.[0-9]+)?|150(\\.0+)?)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "latency(100-150)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f6f676d84f4f,p3#000000000000}",
+      "regex" : "latency\\((150\\.[0-9]*[1-9][0-9]*|15[1-9](\\.[0-9]+)?|1[6-9][0-9](\\.[0-9]+)?|[2-4][0-9][0-9](\\.[0-9]+)?|250(\\.0+)?)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "latency(150.0-250.0)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "latency\\((2[5-9][0-9](\\.[0-9]+)?|3[0-4][0-9](\\.[0-9]+)?|350(\\.0+)?)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "latency(250-350)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#000000000000,p3#ffff00000000}",
+      "regex" : "latency\\((350\\.[0-9]*[1-9][0-9]*|35[1-9](\\.[0-9]+)?|3[6-9][0-9](\\.[0-9]+)?|[4-9][0-9][0-9](\\.[0-9]+)?)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "latency(350-999)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#0000ffff0000,p3#000000000000}",
+      "regex" : "jitter\\(([0-1](\\.[0-9]+)?|2(\\.[0-4][0-9]*|\\.5)?)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "jitter(0-2.5)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffffe0e00000,p3#000000000000}",
+      "regex" : "jitter\\((2\\.(5[1-9]|[6-9][0-9]*|[5-9])|[3-4](\\.[0-9]+)?|5\\.0)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "jitter(2.5-5.0)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#f6f6aeae4f4f,p3#000000000000}",
+      "regex" : "jitter\\((5\\.(0[1-9]|[1-9][0-9]*|[1-9])|[6-9](\\.[0-9]+)?|10\\.0)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "jitter(5.0-10.0)"
+    },
+    {
+      "action" : "HighlightTrigger",
+      "matchType" : 0,
+      "parameter" : "{p3#ffff00000000,p3#000000000000}",
+      "regex" : "jitter\\((10\\.0*[1-9][0-9]*|1[1-9](\\.[0-9]+)?|[2-9][0-9](\\.[0-9]+)?|100(\\.0+)?)\\)",
+      "partial" : false,
+      "contentregex" : "",
+      "disabled" : 0,
+      "name" : "jitter(10.0-100)"
+    }
+  ],
+  "Vertical Spacing" : 1,
+  "Normal Font" : "Monaco 12",
+  "Name" : "Fortigate Triggers",
+  "Custom Command" : "No",
+  "Horizontal Spacing" : 1,
+  "Prompt Before Closing 2" : false,
+  "Jobs to Ignore" : [
+    "rlogin",
+    "ssh",
+    "slogin",
+    "telnet"
+  ],
+  "Tags" : [
+
+  ],
+  "Columns" : 120,
+  "Non Ascii Font" : "Monaco 12",
+  "Default Bookmark" : "No",
+  "Initial Text" : "sh ssh_manager-v1.3a.sh",
+  "Command" : "\/bin\/bash --login",
+  "Rows" : 25,
+  "Icon" : 0,
+  "Scrollback Lines" : 1000
+}
