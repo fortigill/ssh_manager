@@ -25,48 +25,48 @@ choose_db() {
             echo "  $i) $desc ($fname)"
             i=$((i + 1))
         done < "$REGISTRY_FILE"
-        
+
         total_dbs=$(wc -l < "$REGISTRY_FILE")
         create_opt=$((total_dbs + 1))
         echo "  $create_opt) Create a new database"
         echo "  q) Cancel / Go back"
-        
+
         read -p "Choose an option: " db_choice
-        
+
         if [ "$db_choice" = "q" ] || [ "$db_choice" = "Q" ]; then
             SELECTED_DB_FILE=""
             return 1
         fi
-        
+
         if ! [[ "$db_choice" =~ ^[0-9]+$ ]]; then
             echo "❌ Invalid input."
             continue
         fi
-        
+
         if [ "$db_choice" -eq "$create_opt" ]; then
             echo ""
             echo "--- Create New Database ---"
             read -p "Enter a description name (e.g., Home Lab): " new_desc
             read -p "Enter a database filename (e.g., home_db.txt): " new_file
-            
+
             if [ -z "$new_desc" ] || [ -z "$new_file" ]; then
                 echo "❌ Error: Both fields are required."
                 continue
             fi
-            
+
             if [[ ! "$new_file" =~ \.txt$ ]]; then
                 new_file="${new_file}.txt"
             fi
-            
+
             if grep -q ":$new_file" "$REGISTRY_FILE"; then
                 echo "❌ A database with that filename already exists."
                 continue
             fi
-            
+
             echo "$new_desc:$new_file" >> "$REGISTRY_FILE"
             [ ! -f "$new_file" ] && touch "$new_file"
             echo "✅ New database '$new_desc' created successfully!"
-            
+
             SELECTED_DB_FILE="$new_file"
             SELECTED_DB_DESC="$new_desc"
             return 0
@@ -87,26 +87,32 @@ add_host() {
     echo "--- Add New Host ---"
     echo "Select which database to add the host into:"
     choose_db || return
-    
+
     echo ""
     echo "Adding host to: $SELECTED_DB_DESC ($SELECTED_DB_FILE)"
     read -p "Enter a friendly name/alias for the host: " alias
-    read -p "Enter the username: " user
+    read -p "Enter the username [default: admin]: " user
+
+    # Default to admin if left blank
+    if [ -z "$user" ]; then
+        user="admin"
+    fi
+
     read -p "Enter the host IP or FQDN: " host
 
-    if [ -z "$alias" ] || [ -z "$user" ] || [ -z "$host" ]; then
-        echo "❌ Error: All fields are required."
+    if [ -z "$alias" ] || [ -z "$host" ]; then
+        echo "❌ Error: Alias and Host IP/FQDN are required."
         return
     fi
 
     echo "$alias:$user:$host" >> "$SELECTED_DB_FILE"
-    echo "✅ Host '$alias' added successfully to $SELECTED_DB_DESC!"
+    echo "✅ Host '$alias' ($user@$host) added successfully to $SELECTED_DB_DESC!"
 }
 
 delete_host() {
     echo ""
     echo "--- Delete Host ---"
-    
+
     read -s -p "Enter the password to delete a host: " entered_pass
     echo ""
 
@@ -133,7 +139,7 @@ delete_host() {
     done < "$SELECTED_DB_FILE"
 
     read -p "Enter the number of the host to delete (or press Enter to cancel): " choice
-    
+
     if [ -z "$choice" ]; then
         return
     fi
@@ -166,16 +172,16 @@ connect_host() {
 
     total_lines=$(wc -l < "$SELECTED_DB_FILE")
     local current=1
-    
+
     while true; do
         echo ""
         local end=$((current + 9))
         if [ $end -gt $total_lines ]; then
             end=$total_lines
         fi
-        
+
         echo "--- [$SELECTED_DB_DESC] Showing hosts $current to $end of $total_lines ---"
-        
+
         i=$current
         while [ $i -le $end ]; do
             line=$(sed -n "${i}p" "$SELECTED_DB_FILE")
@@ -188,38 +194,50 @@ connect_host() {
 
         echo ""
         echo -n "Press [Spacebar] for next 10, type host # (then Enter), or 'q' to go back: "
-        
-        read -n 1 -s key
-        
+
+        IFS= read -n 1 -s key
+
         if [ "$key" = "q" ] || [ "$key" = "Q" ]; then
             echo ""
             return
         elif [ "$key" = " " ]; then
             echo ""
+            if [ $total_lines -le 10 ]; then
+                echo "ℹ️ All $total_lines hosts are already displayed on this page."
+                sleep 1
+                continue
+            fi
             current=$((current + 10))
             if [ $current -gt $total_lines ]; then
                 current=1
+                echo "🔄 Reached the end. Wrapping back to page 1..."
+                sleep 1
             fi
             continue
         elif [[ "$key" =~ ^[0-9]$ ]]; then
             choice="$key"
             while true; do
-                read -n 1 -s next_char
+                IFS= read -n 1 -s next_char
                 if [ -z "$next_char" ] || [ "$next_char" = $'\n' ] || [ "$next_char" = $'\r' ]; then
                     break
                 fi
                 choice="$choice$next_char"
             done
             echo ""
-            
+
             if [ "$choice" -ge 1 ] && [ "$choice" -le "$total_lines" ]; then
                 line=$(sed -n "${choice}p" "$SELECTED_DB_FILE")
                 alias=$(echo "$line" | cut -d':' -f1)
                 user=$(echo "$line" | cut -d':' -f2)
                 host=$(echo "$line" | cut -d':' -f3)
+
+                echo "🚀 Connecting to $alias ($user@$host)... (Auto abort in 5 seconds on no response...)"
                 
-                echo "🚀 Connecting to $alias ($user@$host)..."
-                ssh "$user@$host"
+                # Protect script from Ctrl+C while letting ssh handle it
+                trap '' INT
+                ssh -o ConnectTimeout=5 "$user@$host"
+                trap - INT
+
                 return
             else
                 echo "❌ Invalid host number: $choice"
@@ -236,7 +254,7 @@ connect_host() {
 while true; do
     echo ""
     echo "=============================="
-    echo "       SSH Host Manager       "
+    echo "   SSH Host Manager v1.3a     "
     echo "=============================="
     echo "1) Connect to a Host"
     echo "2) Add a New Host"
