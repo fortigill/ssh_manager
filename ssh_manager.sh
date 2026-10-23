@@ -2,6 +2,8 @@
 
 REGISTRY_FILE="db_registry.txt"
 DELETE_PASSWORD="fortinetwins"
+VERSION="1.3"  # Update this when you make significant changes
+BUILD_DATE="2026-10-23"
 
 # Initialize default databases registry and files if they don't exist
 if [ ! -f "$REGISTRY_FILE" ]; then
